@@ -1,0 +1,1018 @@
+Question 1
+1
+ Point
+Question 1
+What is this module code? CSY2080
+
+Blank 1
+CSY2080
+Question 2
+Question 2
+1
+ Point
+Question 2
+The world of gaming has evolved dramatically over the past few decades, providing gamers an enriching and addictive experience with every little change. Around 150 million Americans enjoy playing video games, out of which 42% play video games on a daily basis. Statistics show that a gamer’s average age is 35, while 74% are around 18 years of age or older. The industry is the focus of this section of a database. 
+
+There are many companies in the gaming industry, including big names like Apple, Nintendo, Sony and Microsoft. All companies must be registered with companies house and therefor have a registration number, name and worth. 
+
+Each company may offer arrange of platforms for example Nintendo DS or Wii, or Sony PS3, PS4. Platform names are unique, other interesting details include the price. 
+
+There are a range of great games on the market; games fall in to a range of genre and are often age rated. All games have game_id, name and description. 
+
+Each platform will support many different games and a game can be played on many platforms. it is important to get the correct game for your platform. The price of the game will vary depending on the specific platform. 
+
+You are required to draw up an ER diagram and associated tables to enable you to answer the questions that follow. Answer true to question below when you have completed this stage.
+
+I have read the scenario and completed the model
+
+
+True
+
+False
+Question 3
+Question 3
+1
+ Point
+Question 3
+From the given scenario, identify the number of entities
+
+4
+
+Blank 1
+4
+Question 4
+Question 4
+1
+ Point
+Question 4
+From the given scenario, identify the number of primary keys
+
+4
+
+Blank 1
+4
+Question 5
+Question 5
+1
+ Point
+Question 5
+From the given scenario, identify the number of foreign keys
+
+2
+
+Blank 1
+2
+Question 6
+Question 6
+1
+ Point
+Question 6
+From the given scenario, identify the number of mandatory foreign keys
+
+3
+
+Blank 1
+3
+Question 7
+Question 7
+4
+ Points
+Question 7
+From the given scenario, list the entities in the correct order for integrity, use good practise and naming conventions
+
+game
+
+industry
+
+platform
+
+company
+
+Blank 1
+game
+Blank 2
+industry
+Blank 3
+platform
+Blank 4
+company
+Question 8
+Question 8
+2
+ Points
+Question 8
+From the given scenario and entities you identify list the table names. Use good practise and standard naming conventions.
+
+games, industries, platforms, companies
+
+Blank 1
+games
+Blank 2
+industries
+Blank 3
+platforms
+Blank 4
+companies
+Question 9
+Question 9
+4
+ Points
+Question 9
+From the given scenario, identify all primary key columns; include table name and column name(s) use the format below. Where there are multiple columns separate them by a coma. eg tablename(columname, columnname)  order_lines (product_code, line_no) List them in the appropriate order for integrity. Use good practise and standard naming conventions
+
+Blank 1, Blank 2, Blank 3, Blank 4
+
+Blank 1
+Add your answer
+Blank 2
+Add your answer
+Blank 3
+Add your answer
+Blank 4
+Add your answer
+Question 10
+Question 10
+3
+ Points
+Question 10
+From the given scenario, identify all foreign key columns; include table name and column name(s) use the format below. Where there are multiple columns separate them by a coma. eg order_lines (product_code)
+
+Blank 1, Blank 2, Blank 3
+
+Blank 1
+Add your answer
+Blank 2
+Add your answer
+Blank 3
+Add your answer
+Question 11
+Question 11
+7
+ Points
+Question 11
+A table to store general guest information is required with brief details. Guests are allocated a unique id, no longer than 5 digits. Guests must have a UK mobile number with a fixed size eg 07985851851, which is mandatory. They should also evidence that they adults eg over 18 and their status eg “N” for New or “R” for returning, with a DEFAULT of N. Returning guests have an allowance of £500 to spend in the spa.
+
+
+
+From the given scenario, complete the sample table specification, identify the table name, missing attributes and Oracle relational datatypes. You should also include the constraint names, mandatory fields and defaults. Use good practice and standard conventions. 
+
+ 
+
+      tablename
+
+   attribute
+
+   datatype
+
+   constraints
+
+     guests
+
+ guest_id
+
+ NUMBER(5)
+
+ PRIMARY KEY,NOT NULL
+
+       
+
+ mobile_number
+
+ VARCHAR2(11)
+
+ NOT NULL
+
+       
+
+ dob
+
+ NUMBER(10)
+
+ 
+
+       
+
+ status
+
+ CHAR
+
+ DEFAULT N, CHECK N OR R
+
+       
+
+ allowance
+
+ VARCHAR2(10)
+
+    
+
+      
+
+Blank 1
+guests
+Blank 2
+guest_id
+Blank 3
+NUMBER(5)
+Blank 4
+PRIMARY KEY,NOT NULL
+Blank 5
+mobile_number
+Blank 6
+VARCHAR2(11)
+Blank 7
+NOT NULL
+Blank 8
+dob
+Blank 9
+NUMBER(10)
+Blank 10
+status
+Blank 11
+CHAR
+Blank 12
+DEFAULT N, CHECK N OR R
+Blank 13
+allowance
+Blank 14
+VARCHAR2(10)
+Question 12
+Question 12
+5
+ Points
+Question 12
+
+
+cust_Service.jpg
+
+
+
+
+From the ERD above, identify all key constraint names. Use the correct order to maintain integrity. Use good practice and standard naming conventions customers, Blank 2, Blank 3, Blank 4, Blank 5
+
+Blank 1
+customers
+Blank 2
+Add your answer
+Blank 3
+Add your answer
+Blank 4
+Add your answer
+Blank 5
+Add your answer
+Question 13
+Question 13
+1
+ Point
+Question 13
+How do you resolve a 1:1 relationship?
+
+
+decompose it
+
+
+add an additional entity
+
+
+post keys to link entity
+
+
+consolidate it
+
+
+add parents
+
+Question 14
+Question 14
+1
+ Point
+Question 14
+How do you resolve a M:N relationship?
+
+
+decompose it
+
+
+add an additional entity
+
+
+post keys to link entity
+
+
+consolidate it
+
+
+remove parents
+
+Question 15
+Question 15
+1
+ Point
+Question 15
+Which of the following statements are true about an attribute?
+
+
+a group of data items
+
+
+characteristic of an entity
+
+
+maybe be optional or mandatory
+
+
+non decomposable unit of data about an entity
+
+
+classification of the type of values stored
+
+Question 16
+Question 16
+1
+ Point
+Question 16
+Which statement BEST describes the main components of a entity relationship diagram?
+
+
+entities, relationships, cardinality
+
+
+relations, columns, attributes, keys
+
+
+entities, relations, cardinality
+
+
+entities, relationships, columns
+
+
+attributes, domains, keys and integrity
+
+Question 17
+Question 17
+1
+ Point
+Question 17
+Which statement BEST describes the main components of a table specification?
+
+
+attributes, domains, keys and integrity
+
+
+entities, relationships, cardinality
+
+
+tables, columns and rows
+
+
+attributes, data and cardinality
+
+
+keys and integrity
+
+Question 18
+Question 18
+1
+ Point
+Question 18
+Which of the following statements are true about a datatype?
+
+
+classification of the type of values stored
+
+
+helps to defines an attribute
+
+
+specify how data can be used
+
+
+a group of data items
+
+
+applies domain integrity
+
+
+applies to referential integrity
+
+Question 19
+Question 19
+1
+ Point
+Question 19
+Which of the following statements are true about decomposition?
+
+
+applied to resolve complex relationships
+
+
+a relationship that can not be processed in a relational database
+
+
+requires an additional entity
+
+
+applies to M:N relationships
+
+
+detail of data is lost
+
+
+requires an additional relationship
+
+Question 20
+Question 20
+2
+ Points
+Question 20
+Complete the missing information about domain integrity:
+
+Domain integrity is concerned with Blank 1.
+
+Domain integrity enforces the Blank 2 of data
+
+Blank 1
+Add your answer
+Blank 2
+Add your answer
+Question 21
+Question 21
+3
+ Points
+Question 21
+Complete the missing information about entity integrity.
+
+Entity integrity is concerned with Blank 1 keys.
+
+Each record must have a Blank 2 value.
+
+Entity integrity key values can not be Blank 3.
+
+Blank 1
+Add your answer
+Blank 2
+Add your answer
+Blank 3
+Add your answer
+Question 22
+Question 22
+1
+ Point
+group, where appropreate, the following under the key headings column or constraint
+
+Prompts
+Answers
+Question 22
+1
+pk_modules
+
+pk_module_code
+
+Option 31, selected.
+Question 22
+2
+rule
+
+module_date
+
+Option 01, selected.
+Question 22
+3
+data
+
+key constraint
+
+Option 11, selected.
+Question 22
+4
+modules(module_code)
+
+key column
+
+Option 21, selected.
+Question 22
+5
+fk_m_courses
+
+Select match
+
+Question 22
+6
+modules(course_code)
+
+Select match
+
+Question 23
+Question 23
+3
+ Points
+Question 23
+Complete the missing information about referential integrity.
+
+Referential integrity is concerned with Blank 1 keys.
+
+It defines how tables are Blank 2.
+
+Any value in a referential key must be an existing Blank 3 or Blank 4
+
+Blank 1
+Add your answer
+Blank 2
+Add your answer
+Blank 3
+Add your answer
+Blank 4
+Add your answer
+Question 24
+Question 24
+1
+ Point
+Question 24
+Which of the following statements are true about an entity?
+
+
+encapsulate business policy and data
+
+
+a person, place, thing or concept about which data can be collected
+
+
+made up of a number of attributes
+
+
+maybe be optional or mandatory
+
+
+a group of data items
+
+Question 25
+Question 25
+1
+ Point
+Question 25
+Which of the following checks test for entities?
+
+
+is it of importance
+
+
+is it necessary to store data about it
+
+
+are there many occurrences
+
+
+does it have integrity
+
+
+can it take NULLs
+
+
+is it related to other entities
+
+Question 26
+Question 26
+1
+ Point
+Question 26
+Which 2 columns are referenced in an foreign key constraint?
+
+
+the primary key in the parent table and the foreign key in the child table
+
+
+the primary key in the parent table and the foreign key in the parent table
+
+
+the primary key in the parent table and the secondary key in the parent table
+
+
+the primary key in the parent table and another attribute in the parent table
+
+
+the primary key in the child table and foreign key in the child table
+
+
+the foreign key in the child table and foreign key in the parent table
+
+Question 27
+Question 27
+1
+ Point
+Question 27
+Which of the following statements are true about a foreign key?
+
+
+a constraint on data values
+
+
+mandatory value so cannot take nulls
+
+
+field(s) in a child table that references a matching primary key field(s) in a parent table
+
+
+a secondary key in a parent table
+
+
+only 1 per table
+
+
+may have many parts
+
+
+may be many in a table
+
+Question 28
+Question 28
+1
+ Point
+Question 28
+Which of these statements are true about integrity?
+
+
+represented by 2 dimentional tables
+
+
+has a set of tuples
+
+
+has an unordered set of attribute values
+
+
+is a link between tables
+
+
+governs operations on the data and structures of a database
+
+
+have the same columns
+
+Question 29
+Question 29
+4
+ Points
+Match the logical definitions to the physical representations
+
+Prompts
+Answers
+Question 29
+1
+attribute
+
+column
+
+Option 01, selected.
+Question 29
+2
+entity
+
+table
+
+Option 11, selected.
+Question 29
+3
+domain
+
+datatype
+
+Option 31, selected.
+Question 29
+4
+tuple
+
+row
+
+Option 21, selected.
+Question 30
+Question 30
+1
+ Point
+Question 30
+Which of the following statements are true about a primary key?
+
+
+a constraint on data values
+
+
+a unique identifier
+
+
+mandatory value, so cannot take nulls
+
+
+field(s) used to uniquely identify a row of data
+
+
+only 1 per table
+
+
+may have many parts
+
+
+may be many in a table
+
+Question 31
+Question 31
+1
+ Point
+Question 31
+Which statement best describes the main components of a relational database?
+
+
+relations, attributes, tuples, keys and integrity rules
+
+
+relations, columns, attributes, keys and integrity language
+
+
+relations, rows, tuples, keys and integrity data
+
+
+relations, tables, tuples, keys and integrity information
+
+
+tables, columns and rows
+
+Question 32
+Question 32
+1
+ Point
+Question 32
+Which of the following statements are true about relationships?
+
+
+link between entities or tables
+
+
+match primary key in parent table to foreign key in child table
+
+
+maybe be optional or mandatory
+
+
+require entity, referential and domain integrity
+
+
+links attributes in the same table together
+
+Question 33
+Question 33
+1
+ Point
+Question 33
+What 3 types of relationship may exist in a draft ERM?
+
+
+1:M
+
+
+M:N
+
+
+1:1
+
+
+1:0
+
+
+M:0
+
+Question 34
+Question 34
+1
+ Point
+Question 34
+What is the only acceptable relationship in a final ERM?
+
+
+1:M
+
+
+M:N
+
+
+1:1
+
+
+1:0
+
+
+M:0
+
+Question 35
+Question 35
+3
+ Points
+Question 35
+Complete the missing information about primary keys.
+
+When selecting primary keys they should be Blank 1, Blank 2 and Blank 3
+
+Blank 1
+Add your answer
+Blank 2
+Add your answer
+Blank 3
+Add your answer
+Question 36
+Question 36
+1
+ Point
+Match the following item to the best good practice name
+
+Prompts
+Answers
+Question 36
+1
+table
+
+projects
+
+Option 41, selected.
+Question 36
+2
+entity
+
+project
+
+Option 01, selected.
+Question 36
+3
+attribute
+
+project_id
+
+Option 31, selected.
+Question 36
+4
+constraint
+
+pk_projects
+
+Option 21, selected.
+Question 37
+Question 37
+1
+ Point
+Question 37
+Which integrity is related to foreign keys?
+
+Referential integrity
+
+Blank 1
+Referential integrity
+Question 38
+Question 38
+1
+ Point
+Question 38
+Which integrity is related to primary keys?
+
+Entity integrity
+
+Blank 1
+Entity integrity
+Question 39
+Question 39
+1
+ Point
+Question 39
+Which integrity is related to quality of data?
+
+Domain integrity
+
+Blank 1
+Domain integrity
+Question 40
+Question 40
+1
+ Point
+Question 40
+Which of these best represents a NULL value?
+
+
+blank
+
+
+zero
+
+
+0
+
+
+negative
+
+Question 41
+Question 41
+1
+ Point
+Question 41
+What constraint is automatically set on defined primary keys?
+
+*check your spelling and CASE, if it's wrong, it's wrong.
+
+NOT NULL
+
+Blank 1
+NOT NULL
+Question 42
+Question 42
+1
+ Point
+Question 42
+What are foreign keys in a link entity?
+
+
+copies of primary keys from the decomposed parent entities
+
+
+copies of foreign key from the decomposed entities
+
+
+can be any attribute
+
+
+primary and foreign keys from the decomposed entities
+
+Question 43
+Question 43
+1
+ Point
+Question 43
+What is data redundancy?
+
+
+when data is no longer needed
+
+
+unnecessary duplication of data
+
+
+when old data is removed
+
+
+when there is too much data
+
+
+when there is not enough data
+
+Question 44
+Question 44
+1
+ Point
+Question 44
+Which 2 attributes are matched in a relationship?
+
+
+the primary key in the parent table and the foreign key in the child table
+
+
+the primary key in the parent table and the foreign key in the parent table
+
+
+the primary key in the parent table and the secondary key in the parent table
+
+
+the primary key in the parent table and another attribute in the parent table
+
+
+the primary key in the child table and the foreign key in the child table
+
+
+foreign key in the child table and foreign key in the parent table
+
+Question 45
+Question 45
+1
+ Point
+Question 45
+Which of the following is the best example of a table name applying standards, conventions and good practice?
+
+
+project
+
+
+projects
+
+
+project_id
+
+
+project_details
+
+
+project_name
+
+Question 46
+Question 46
+1
+ Point
+Question 46
+Which additional constraint should be added to a mandatory foreign key column?
+
+Foreign key
+
+Blank 1
+Foreign key
+Additional content
