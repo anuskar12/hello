@@ -1,0 +1,92 @@
+Q.1.Write a program to display the series of 2, 4, 6 .......up to 10th term using for loop, while loop and do loop.
+	for(int x=2;x<=20;x=x+2){
+          		 System.out.print(x+",");
+	}
+-----------------------------------------
+       int y=2;
+       while(y<=20){
+           System.out.print(y+",");
+           y=y+2;
+       }
+------------------------------------------
+       int y=2;
+       do{
+           System.out.print(y+",");
+           y=y+2;
+       }while(y<=20);
+
+Q.2. WAP to display the square of first 10 natural numbers.
+    int n=1;
+    while(n<=10){
+	System.out.println(n*n);
+	n++;
+    }	
+=======================
+    int n=1;
+    do{
+	System.out.println(n*n);
+	n++;
+    }while(n<=10);	
+============================
+    for(int n=1;n<=10;n++){
+	System.out.println(n*n);
+    }	
+}
+Q.3.WAP to find the sum of the squre of first 10 natural numbers. use do loop.
+int x=1;
+int sum=0;
+do{ 
+    sum=sum+(x*x);
+    x++;
+}while(x<=10);
+System.out.println("Sum of squares = "+sum);
+
+---------------------------
+int sum=0;
+for(int x=1;x<=10;x++){
+   sum=sum+(x*x);
+}
+System.out.println("Sum of squares of first 10 natural numbers= "+sum);
+
+Q.3.WAP to display the following pattern by using while loop.
+
+1
+11
+111
+1111
+public class Test{
+    public static void main(String []args){
+      int a=1;
+      int x=1;
+      while(a<=4){
+          System.out.println(x);
+          x=x*10+1;
+          a++;
+      }
+       
+    }
+}
+
+
+
+
+
+Q.4. WAP to display the fibonacci series upto 10th term. (1 1 2 3 5 8 .....10th term) using for loop. 
+int a=1;
+int b=1;
+int c=0;
+for(int x=1;x<=10;x++){
+     System.out.println(a);
+     c=a+b;
+     a=b;
+     b=c;
+}
+
+
+
+
+
+
+
+
+
