@@ -1,0 +1,129 @@
+1.	Create an interface named Appliance that contains:
+o	A method powerConsumption() which returns the power consumption of the appliance.
+2.	Create a concrete class WashingMachine that implements Appliance:
+o	It has an attribute wattage (in watts).
+o	A constructor to initialize wattage.
+o	Implements powerConsumption() method, returning power consumption using the formula: wattage * 2.
+3.	Create a main method to create a WashingMachine object, call powerConsumption(), and display the output.
+
+
+ 1. interface Appliance{
+ 2.         double powerConsumption();
+ 3. } 
+ 4.  
+ 5. public class WashingMachine implements Appliance {
+ 6.              private double wattage();
+ 7.        public double Washing( double wattage){ 
+ 8.                 this.wattage = wattage;
+ 9.         public powerConsumption( ){
+10                return wattage *2 ;
+11. }
+12.  
+13.  
+14. public static void  main (String [] args){
+15. WashingMachine obj = new WashingMachine(1000);
+16. System.out.println(obj.powerConsumption());
+17. }
+}
+18.  
+
+
+
+
+public class Pattern {
+    public static void display1() {
+        for (int i = 5; i >= 1; i--) {
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j + " ");
+            }
+            System.out.println(); 
+        }
+    }
+
+    public static void display2() {
+        for (int i = 1; i <= 5; i++) {
+            for (int j = i; j <= 5; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println(); 
+        }
+    }
+
+    public static void main(String[] args) {
+        display1();
+        display2();
+    }
+}
+
+1. Create a class named `Product` with the following attributes:
+   - `productId` (integer)
+   - `productName` (String)
+   - `price` (double)
+   - A constructor to initialize these attributes.
+
+2. Create another class `Store` that:
+   - Contains an `ArrayList<Product>` to store multiple products.
+   - Has a method `addProduct(int productId, String productName, double price)` to add products to the list.
+   - Has a method `displayProducts()` to display all products in the list.
+
+3. In the `main` method:
+   - Create an instance of `Store`.
+   - Add at three products. least
+   - Call `displayProducts()` to show the stored products.
+
+import java.util.ArrayList;
+
+class Product {
+    private int productId;
+    private String productName;
+    private double price;
+    
+    public Product(int productId, String productName, double price) {
+        this.productId = productId;
+        this.productName = productName;
+        this.price = price;
+    }
+    
+    public String toString() {
+        return "Product ID: " + productId + ", Product Name: " + productName + ", Price: $" + price;
+    }
+}
+
+class Store {
+    private ArrayList<Product> products;
+    
+    public Store() {
+        products = new ArrayList<>();
+    }
+    
+    public void addProduct(int productId, String productName, double price) {
+        Product product = new Product(productId, productName, price);
+        products.add(product);
+        System.out.println("Product added successfully.");
+    }
+    
+    public void displayProducts() {
+        System.out.println("\n*** PRODUCT LIST ***");
+        if (products.isEmpty()) {
+            System.out.println("No products available.");
+        } else {
+            for (Product product : products) {
+                System.out.println(product);
+            }
+        }
+    }
+}
+
+public class ProductManagement {
+    public static void main(String[] args) {
+        Store store = new Store();
+        
+        store.addProduct(101, "Ubab", 1999.99);
+        store.addProduct(102, "CaptainButwal", 499.99);
+        store.addProduct(103, "Harip Sir", 79.99);
+        
+        store.displayProducts();
+    }
+}
+
+
