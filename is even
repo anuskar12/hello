@@ -1,0 +1,18 @@
+public class Exercise6 {
+    public boolean isEven(int id) {
+        return id % 2 == 0;
+    }
+    
+    public static void main(String[] args) {
+        Exercise6 ex = new Exercise6();
+        
+        // Sample demonstrations
+        int num1 = 5;
+        System.out.println("Enter a number: " + num1);
+        System.out.println("This is " + (ex.isEven(num1) ? "even" : "not even"));
+        
+        int num2 = 6;
+        System.out.println("Enter a number: " + num2);
+        System.out.println("This is " + (ex.isEven(num2) ? "even" : "not even"));
+    }
+}
