@@ -1,0 +1,190 @@
+What are the Constructor Types? Explain with Examples.
+1.	Default Constructor:
+o	Created by Java if no constructor is defined.
+o	Takes no parameters and initializes instance variables to default values.
+public class Student {
+    String name;
+    int id;
+    
+    // Default constructor (created automatically if no constructors are defined)
+    public Student() {
+        // Empty constructor
+    }
+}
+2.	Parameterized Constructor:
+o	Takes parameters and initializes instance variables with the provided values.
+public class Student {
+    String name;
+    int id;
+    
+    // Parameterized constructor
+    public Student(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+}
+3.	Copy Constructor:
+o	Creates a new object as a copy of an existing object.
+public class Student {
+    String name;
+    int id;
+    
+    // Parameterized constructor
+    public Student(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+    
+    // Copy constructor
+    public Student(Student other) {
+        this.name = other.name;
+        this.id = other.id;
+    }
+}
+________________________________________
+Why is Constructor Name Similar to Class Name?
+•	Constructors have the same name as the class because:
+1.	It makes it clear that the method is specifically for initializing new objects of that class.
+2.	It provides a clear and consistent convention for object creation.
+3.	It allows the JVM to identify which method to call when the new keyword is used.
+________________________________________
+Why is Return Type Not Allowed for Constructors?
+•	Return types are not allowed for constructors because:
+1.	Constructors always return a new instance of the class they belong to.
+2.	The return type is implicitly the class itself.
+3.	Adding an explicit return type would cause ambiguity between constructors and regular methods.
+4.	The purpose of a constructor is specifically to initialize a new object, not to compute and return a value.
+________________________________________
+Exercise 4: Java Loop Types
+Types of Loops in Java
+1.	For Loop:
+Used when the number of iterations is known beforehand.
+for (int i = 1; i <= 5; i++) {
+    System.out.println(i);
+}
+2.	While Loop:
+Used when the number of iterations is not known in advance.
+int i = 1;
+while (i <= 5) {
+    System.out.println(i);
+    i++;
+}
+3.	Do-While Loop:
+Ensures the loop body executes at least once.
+int i = 1;
+do {
+    System.out.println(i);
+    i++;
+} while (i <= 5);
+4.	Enhanced For Loop (For-Each):
+Used specifically for iterating through arrays or collections.
+int[] numbers = {1, 2, 3, 4, 5};
+for (int num : numbers) {
+    System.out.println(num);
+}
+________________________________________
+Exercise 5: Array Operations
+Problem:
+Write a program that initializes an array with 10 random integers and then prints:
+1.	Every element with its index.
+2.	Every even element.
+3.	All elements in reverse order.
+4.	Only the first and last elements.
+Solution:
+import java.util.Random;
+public class ArrayOperations {
+    public static void main(String[] args) {
+        int[] array = new int[10];
+        Random random = new Random();
+        
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(100); // Random integers between 0 and 99
+        }
+        
+        // a) Print every element with its index
+        System.out.println("Every element with its index:");
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Index " + i + ": " + array[i]);
+        }
+        
+        // b) Print every even element
+        System.out.println("\nEvery even element:");
+        for (int element : array) {
+            if (element % 2 == 0) {
+                System.out.print(element + " ");
+            }
+        }
+        System.out.println();
+        
+        // c) Print all elements in reverse order
+        System.out.println("\nAll elements in reverse order:");
+        for (int i = array.length - 1; i >= 0; i--) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+        
+        // d) Print only the first and last elements
+        System.out.println("\nFirst and last elements:");
+        System.out.println("First: " + array[0] + ", Last: " + array[array.length - 1]);
+    }
+}
+________________________________________
+Exercise 6: Shape Interface and Triangle Implementation
+Solution:
+interface Shape {
+    double area();
+    double perimeter();
+}
+public class Triangle implements Shape {
+    private double base;
+    private double height;
+    private double side1;
+    private double side2;
+    
+    public Triangle(double base, double height, double side1, double side2) {
+        this.base = base;
+        this.height = height;
+        this.side1 = side1;
+        this.side2 = side2;
+    }
+    
+    public double area() {
+        return 0.5 * base * height;
+    }
+    
+    public double perimeter() {
+        return base + side1 + side2;
+    }
+    
+    public static void main(String[] args) {
+        Triangle triangle = new Triangle(5, 4, 3, 4);
+        System.out.println("Area of Triangle: " + triangle.area());
+        System.out.println("Perimeter of Triangle: " + triangle.perimeter());
+    }
+}
+________________________________________
+Exercise 7: Prism Interface and Rectangular Prism Implementation
+Solution:
+interface Prism {
+    public double area();
+}
+class RectangularPrism implements Prism {
+    private double length;
+    private double width;
+    private double height;
+    
+    public RectangularPrism(double length, double width, double height) {
+        this.length = length;
+        this.width = width;
+        this.height = height;
+    }
+    
+    public double area() {
+        return 2 * (width * length + height * length + height * width);
+    }
+    
+    public static void main(String[] args) {
+        RectangularPrism prism = new RectangularPrism(5, 4, 3);
+        System.out.println("The area of Rectangular Prism is: " + prism.area());
+    }
+}
