@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class SumPositiveIntegers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+        int num;
+        
+        System.out.println("Enter a series of positive integers (end with -1):");
+        
+        while (true) {
+            num = scanner.nextInt();
+            if (num == -1) {
+                break;
+            }
+            sum += num;
+        }
+        
+        System.out.println("Sum of all the integers is: " + sum);
+        scanner.close();
+    }
+}
